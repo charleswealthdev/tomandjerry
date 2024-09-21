@@ -237,8 +237,9 @@ body {
 }
 
 .token-chart img {
-    max-width: 100%;
-    height: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
 }
 
 .token-distribution {
@@ -270,7 +271,8 @@ body {
 
     .hero{
         padding: 30px 10px ;
-        
+        flex-direction: column;
+       
     }
     .hero-content h1 {
         font-size: 30px;
@@ -305,6 +307,7 @@ body {
     
     .hero-timer{
         padding: none;
+        margin-top: 30px;
     }
 
     .timer-box h3 {
@@ -385,8 +388,9 @@ body {
 }
 
 .token-chart img {
-    max-width: 100%;
-    height: auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
 }
 
 .token-distribution {
@@ -422,10 +426,18 @@ body {
         padding: 6px 8px;
     } 
 
+    /* .hero {
+        text-align: center;
+        padding: 60px 20px;
+        background-color: #00aaff;
+        color: white;
+        display: flex;
+    } */
     .hero{
         padding: 30px 10px ;
-        
+        flex-direction: column;
     }
+
     .hero-content h1 {
         font-size: 20px;
         margin: 0;
@@ -465,6 +477,11 @@ body {
       margin: 0;
       /* border: 1px solid white; */
      
+    }
+
+    .hero-timer{
+        padding: none;
+        margin-top: 30px;
     }
     
 
@@ -535,8 +552,9 @@ body {
 }
 
 .token-chart img {
-    max-width: 100%;
-    height: auto;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
 }
 
 .token-distribution {

@@ -362,13 +362,15 @@ body {
     padding: 20px 10px;
     text-align: center;
     background-color: #00bfff;
-    color: white;
+    color: white; 
+    font-size: 15px;
+
 }
 
 .the-bart h2,
 .about h2,
 .tokenomics h2 {
-    font-size: 18px;
+    font-size: 15px;
    
 }
 
@@ -527,6 +529,7 @@ body {
     text-align: center;
     background-color: #00bfff;
     color: white;
+    font-size: 13px;
 }
 
 .the-bart h2,

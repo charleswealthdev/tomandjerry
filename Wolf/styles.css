@@ -1,0 +1,355 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: white;
+}
+
+.navbar-left .logo img {
+  height: 80px;
+}
+
+.navbar-center {
+  list-style-type: none;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navbar-center li {
+  margin: 0 20px;
+}
+
+.navbar-center li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.Whitepaper {
+  background-color: white;
+  color: black;
+  border: 1px solid #16c1f8;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Whitepaper:hover {
+  background-color: #16c1f8;
+  color: white;
+}
+
+/* Hero section */
+.hero {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hero-content img {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+}
+
+.hero-content p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #555;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.Buy {
+  margin: 20px auto;
+  display: inline-block;
+  background-color: #0e5ebd;
+  color: white;
+  font-size: 20px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Buy:hover {
+  background-color: #0a47a1;
+}
+
+
+/* General section styling */
+.presale-details, .token-calculator {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.presale-details h2, .token-calculator h2 {
+  text-align: center;
+  color: #0e5ebd;
+}
+
+/* Presale Details */
+.presale-info {
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.presale-info p {
+  margin: 10px 0;
+}
+
+/* Progress Bar */
+.progress-container {
+  margin-top: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 20px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.progress {
+  background-color: #16c1f8;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Token Calculator */
+.calculator-container {
+  text-align: center;
+}
+
+.calculator-container input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+}
+
+.calculator-container p {
+  font-size: 20px;
+}
+
+.calculate-btn {
+  padding: 12px 20px;
+  background-color: #0e5ebd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calculate-btn:hover {
+  background-color: #094a9c;
+}
+
+
+/* Roadmap section */
+.roadmap {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.roadmap h2 {
+  text-align: center;
+  color: #0e5ebd;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+/* Timeline styling */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #16c1f8;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline-date {
+  background-color: #0e5ebd;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: fit-content;
+  font-size: 18px;
+}
+
+.timeline-content {
+  width: 45%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+  margin: 0 0 10px;
+  color: #333333;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #666666;
+  font-size: 16px;
+}
+
+/* Position the timeline dot */
+/* .timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 4px solid #16c1f8;
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item:nth-child(even)::before {
+  left: auto;
+  right: 50%;
+} */
+
+
+.cta-section {
+  background-color: #0e5ebd;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #16c1f8;
+  color: white;
+  font-size: 20px;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0c4a95;
+}
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .navbar-center {
+      flex-direction: column;
+      padding: 10px 0;
+  }
+  .navbar-center li {
+      margin: 10px 0;
+  }
+  
+  .hero-content h1 {
+      font-size: 36px; /* Reduced font size on smaller screens */
+  }
+  
+  .hero-content p {
+      font-size: 16px; /* Smaller font for better fit */
+  }
+  
+  .Buy {
+      font-size: 18px;
+      padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-content h1 {
+      font-size: 28px; /* Further reduce font size for very small screens */
+  }
+  
+  .hero-content p {
+      font-size: 14px;
+  }
+  
+  .Buy {
+      font-size: 16px;
+      padding: 8px 16px;
+  }
+  
+  .navbar-left .logo img {
+      height: 60px; /* Scale down logo size on small screens */
+  }
+}
